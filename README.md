@@ -1,40 +1,107 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div style="text-align:center">
+    <img src="https://thumbs2.imgbox.com/66/0a/TyYtOS9r_t.png" alt="código café"/>
+</div>
 
-## Getting Started
+# Código café 
+## Pasos iniciales (clonar repositorio):
 
-First, run the development server:
-
+1) Haz clic en el botón: <>Code.
+2) Copia el link del repositorio.
+3) En tu PC, crea una capeta con el nombre que quieras.
+4) Entra dentro de esa carpeta.
+5) En un espacio vacío, mantén presionada la tecla Shift y haz clic.
+6) Elije: "Abrir ventana de PowerShell aquí".
+7) Escribe: git clone y pega la dirección que copiaste. En nuestro caso, quedaría:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+ git clone https://github.com/Leonardo-Valtorta/codigo-cafe.git.
+```
+8) Sin salir del PowerShell, escribe: 
+```bash
+ cd codigo-cafe
+```
+9) Luego escribe:
+```bash
+ npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Ejecutar el servidor de desarrollo
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+ npm run dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Abre [http://localhost:3000](http://localhost:3000) con tu navegador para ver los resultados.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Comandos de Git:
+### Crear ramas
+```bash
+ git branch <nombre-de-la-rama>
+ ```
+Ej: Git branch Navbar
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Visualización de ramas
+```bash
+ git branch
+ ```
+### Cambiar de ramas
+```bash
+ git checkout <nombre-de-la-rama>
+ ```
+Ej: Git branch Main
 
-## Learn More
+### Ver el estado de la rama actual
+```bash
+ git status
+ ```
+Esto nos sirve para:
+* Ver si la rama actual está actualizada.
+* Si hay algo para confirmar, enviar o recibir (pull).
+* Si hay archivos en preparación (staged), sin preparación(unstaged) o que no están recibiendo seguimiento (untracked).
+* Si hay archivos creados, modificados o eliminados.
 
-To learn more about Next.js, take a look at the following resources:
+### Agregar archivos (o cambios que se han hecho) al Staging area
+```bash
+ git add .
+ ```
+### Establecer un Commit
+```bash
+ git commit -m "mensaje incicando que fue lo que se hizo en ese commit"
+ ```
+### Subir los cambios al repositorio
+Esto nos sirve para subir los cambios de la rama actual local a la rama correspondiente remota con el mismo nombre.
+```bash
+ git push 
+ ```
+ Para subir cambios de una rama específica diferente a la actual, debes especificarla:
+ Por ejemplo:
+ ```bash
+ git push origin <nombre-de-la-rama>
+ ```
+### Traer desde el repositorio los cambios que se han hecho
+```bash
+ git pull 
+ ```
+ Por ejemplo, si quieres obtener los cambios de la rama "feature" del remoto "origin":
+```bash
+ git pull origin feature
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Fusionar ramas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<img src="https://img.icons8.com/?size=48&id=5tH5sHqq0t2q&format=png" alt="Exclmacioin" />
 
-## Deploy on Vercel
+:warning:PRECAUCIÓN!!!:warning:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Cuando ya hayas completado el desarrollo de tu proyecto en tu rama y todo funcione correctamente, el último paso es fusionar la rama con su rama padre. Esto se hace con el comando git merge.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Git merge básicamente integra las características de tu rama con todos los commits realizados a la rama master (o a la rama que decidas fusionar lo que hiciste).
+
+```bash
+ git merge
+ ```
+
+<div style="color: #BABABA">
+<h2>Otros datos:</h2>
+
+Este proyecto usa [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) para optimizar y cargar automáticamente Inter, una fuente personalizada de Google.
+</div>
