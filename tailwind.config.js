@@ -12,6 +12,7 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         'verde': '#15605B',
+        'Btn-Agregar':'#7D526D'
       },
     },
   },
