@@ -5,7 +5,7 @@ export default function Contact() {
   return (
   <>
   
-    <div className="py-3">
+    <div className="bg-verde py-3">
       <h1 className="mb-4 text-4xl text-center font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl dark:text-gray-900">
         Contacto
       </h1>
