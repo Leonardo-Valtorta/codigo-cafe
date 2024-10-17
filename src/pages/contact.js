@@ -1,3 +1,4 @@
+import FormContact from "@/components/FormContact";
 import RedSocial from "@/components/RedSocial";
 
 
@@ -36,7 +37,9 @@ export default function Contact() {
           texto='www.codigocafe.com'
         />
       </div>
-      
+      <div>
+        <FormContact />
+      </div>
     </div>
   </>
   )
