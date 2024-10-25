@@ -12,7 +12,13 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         'verde': '#15605B',
-        'Btn-Agregar':'#7D526D'
+        'Btn-Agregar':'#7D526D',
+        navbarBackground: "#F5D48E",
+        navbarBackgroundSecond: "#f5c152",
+        navbarBackgroundThird: "#edc368",
+      },
+      fontFamily: {
+        navbar: ["Pompiere", "sans-serif"],
       },
     },
   },
