@@ -11,7 +11,7 @@ const Carousel = () => {
     }
   }, []);
 
-  const totalItems = 4; 
+  const totalItems = 5; 
 
   const showItem = (index) => {
     setActiveIndex(index);
@@ -30,7 +30,7 @@ const Carousel = () => {
       <div className="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96">
         <div className={`duration-700 ease-in-out ${activeIndex === 0 ? '' : 'hidden'}`} data-carousel-item="active">
           <img 
-            src="/assets/cafeteria.jpg" 
+            src="/assets/cafeteria1.jpg" 
             className="absolute block w-full h-full object-cover" 
             alt="Cafetería 1" 
           />
@@ -56,12 +56,20 @@ const Carousel = () => {
             alt="Cafetería 4" 
           />
         </div>
+        <div className={`duration-700 ease-in-out ${activeIndex === 4 ? '' : 'hidden'}`} data-carousel-item>
+          <img 
+            src="/assets/cafeteria.jpg" 
+            className="absolute block w-full h-full object-cover" 
+            alt="Cafetería " 
+          />
+        </div>
       </div>
 
       <div className="absolute z-30 flex space-x-3 bottom-5 left-1/2 transform -translate-x-1/2">
         <button type="button" className="w-3 h-3 rounded-full bg-white" onClick={() => showItem(0)}></button>
         <button type="button" className="w-3 h-3 rounded-full bg-white" onClick={() => showItem(1)}></button>
         <button type="button" className="w-3 h-3 rounded-full bg-white" onClick={() => showItem(2)}></button>
+        <button type="button" className="w-3 h-3 rounded-full bg-white" onClick={() => showItem(3)}></button>
         <button type="button" className="w-3 h-3 rounded-full bg-white" onClick={() => showItem(3)}></button>
       </div>
 
