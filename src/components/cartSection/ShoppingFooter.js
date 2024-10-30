@@ -6,10 +6,10 @@ return (
     <>
     <div className="flex flex-col justify-between items-center m-3">
         <p className="font-bold text-lg">Total: ${props.total}</p>
-        <div>
+        <div className="w-full text-center">
             <PillButtonXL className="bg-btnBuy hover:bg-btnBuyAllHover">Comprar</PillButtonXL> 
         </div>
-        <div>
+        <div className= "w-full text-center">
             <PillButton className="bg-btnDeleteAll hover:bg-btnDeleteAllHover"><IconTrash/>Vaciar Carrito</PillButton>
         </div>
     </div>

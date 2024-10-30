@@ -9,3 +9,15 @@ const PillButton = ({ children, className }) => {
   }
    
   export default PillButton
+
+  /* EJEMPLO DE USO DEL BOTON
+    =========================
+      Usar como un botón tradicional 
+      Agregar los colores deseados y el texto
+      Para agregar el icono usar el componente deseado
+
+   <PillButton className="bg-btnRemoveItem hover:bg-btnRemoveItemHover">
+      <IconRemove/>
+      Quitar
+    </PillButton>
+  */ 
