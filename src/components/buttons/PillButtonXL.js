@@ -3,7 +3,7 @@ import PillButton from "./PillButton"
 const PillButtonXL = ({ children, className }) => {
 return (
     <>
-    <PillButton className={`px-14 ${className}`}> 
+    <PillButton className={`px-16 ${className}`}> 
         {children}
     </PillButton>
     </>
