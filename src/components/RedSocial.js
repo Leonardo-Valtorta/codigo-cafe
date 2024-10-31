@@ -5,7 +5,7 @@ import Link from "next/link"
 function RedSocial({imagen, sitio, texto}) {
   return (
     <>
-      <div className="ml-8 mt-3 mb-3">
+      <div className="ml-6 mr-6 mt-3 mb-3 w-fit">
         <div class="flex items-center gap-4 hover:scale-105">
           <Image
             src={imagen}
