@@ -46,7 +46,7 @@ const Header = () => {
         <div className={`w-full sm:flex sm:items-center sm:w-full ${isOpen ? 'block' : 'hidden'}`}>
           <ul className="flex flex-col py-3 px-0 items-start justify-evenly w-full sm:flex-row sm:items-center sm:w-full">
             <li className="my-2 sm:my-0 hover:underline">
-              <a href="/aboutUs" className="text-black px-3 py-2">NOSOTROS</a>
+              <a href="#nosotros" className="text-black px-3 py-2">NOSOTROS</a>
             </li>
             <li className="my-2 sm:my-0 hover:underline">
               <a href="#locales" className="text-black px-3 sm:pl-0 py-2">LOCALES</a>
@@ -63,10 +63,10 @@ const Header = () => {
         <div className={`w-full sm:justify-end sm:flex sm:items-center sm:w-full ${isOpen ? 'block' : 'hidden'}`}>
           <ul className="flex flex-col sm:px-0 py-3 px-3 items-start sm:flex-row sm:items-center justify-end w-full sm:w-auto">
             <li className="my-2 sm:my-0 flex items-center hover:underline">
-              <a className="w-6 h-auto" href="/contact">
+              <a className="w-6 h-auto" href="#contacto">
                 <img src="telefono-contacto.png" alt="Contacto" />
               </a>
-              <a href="/contact" className="text-black pr-3 pl-2 py-2">Contacto</a>
+              <a href="#contacto" className="text-black pr-3 pl-2 py-2">Contacto</a>
             </li>
             <li className="my-2 sm:my-0 flex items-center hover:underline">
               <a className="w-6 h-auto" href="#carrito">

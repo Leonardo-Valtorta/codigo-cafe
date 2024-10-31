@@ -11,17 +11,16 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        'verde': "#15605B",
-        'Btn-Agregar':"#7D526D",
-        navbarBackground: "#F5D48E",
-        navbarBackgroundSecond: "#f5c152",
-        navbarBackgroundThird: "#edc368",
-        cafe: "#D6A367"
         'cafe': "#B46C3C",
+        navbarBackground: "#F5D48E",
         'logo': '#F58438',
+        'verde': '#15605B',
         'negro':"#000000",
+        'Btn-Agregar':'#7D526D',
         'Btn-Quitar': '#FFB7CD',
         'Btn-Eliminar-Todo':'#B3261E',
+        navbarBackgroundSecond: "#f5c152",
+        navbarBackgroundThird: "#edc368",
 
         /* Colores Shopping Cart */
         bgShoppingCart:"#D6A367",
@@ -36,8 +35,7 @@ module.exports = {
       },
       fontFamily: {
         navbar: ["Pompiere", "sans-serif"],
-        titleCart:["Jockey One", "sans-serif"],
-        bodyNosotros: ["Roboto", "sans-serif"],
+        titleCart:["Jockey One", "sans-serif"]
       },
     },
   },
