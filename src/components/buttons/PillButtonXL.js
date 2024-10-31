@@ -1,11 +1,9 @@
-import PillButton from "./PillButton" 
-
 const PillButtonXL = ({ children, className }) => {
 return (
     <>
-    <PillButton className={`px-16 ${className}`}> 
+    <button className={`text-white font-bold py-2 px-10 my-2 rounded-full inline-flex items-center ${className}`}> 
         {children}
-    </PillButton>
+    </button>
     </>
 )
 }
