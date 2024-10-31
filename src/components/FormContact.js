@@ -1,3 +1,5 @@
+import PillButton from "./buttons/PillButton";
+
 function htmlFormContact() {
   return (
     <>
@@ -59,7 +61,9 @@ function htmlFormContact() {
           ></textarea>
         </div>
         {/* Debe ir el componente Botón ↓ */}
-
+        <PillButton className="bg-Btn-Agregar hover:bg-pink-900">
+            Enviar
+        </PillButton>
       </htmlForm>
     </>
   );
