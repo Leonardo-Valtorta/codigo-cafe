@@ -12,6 +12,7 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         'cafe': "#B46C3C",
+        cafeNosotros: "#D6A367",
         navbarBackground: "#F5D48E",
         'logo': '#F58438',
         'verde': '#15605B',
@@ -35,7 +36,8 @@ module.exports = {
       },
       fontFamily: {
         navbar: ["Pompiere", "sans-serif"],
-        titleCart:["Jockey One", "sans-serif"]
+        titleCart:["Jockey One", "sans-serif"],
+        bodyNosotros: ["Roboto", "sans-serif"],
       },
     },
   },
