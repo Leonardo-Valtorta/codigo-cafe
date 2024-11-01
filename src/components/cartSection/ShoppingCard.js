@@ -4,7 +4,9 @@ import IconRemove from "../icons/IconRemove";
 import IconMore from "../icons/IconMore"; 
 import IconLess from "../icons/IconLess";
 
-const ShoppingCard = (props) =>{
+const ShoppingCard = ({props, item, deleteFromCart}) =>{
+      const {name, price, id} = item;
+
     return (<>
   <div className="flex flex-col bg-bgShoppingCard p-2 shadow-xl my-4">
     <h4 className="bg-Coffee p-2 font-bold">{props.item.description}</h4>
@@ -20,7 +22,7 @@ const ShoppingCard = (props) =>{
             <IconButton icon = {<IconLess/>}/>
         </div>
         <div className="self-end">
-        <PillButton className="bg-btnRemoveItem hover:bg-btnRemoveItemHover"><IconRemove/>Quitar</PillButton>
+        <PillButton onClick={()=> deleteFromCart(id)} className="bg-btnRemoveItem hover:bg-btnRemoveItemHover"><IconRemove/>Quitar</PillButton>
         </div>
       </div>
     </div>
