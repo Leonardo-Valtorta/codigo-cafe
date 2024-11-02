@@ -6,7 +6,7 @@ const Portada = ({imagen, titulo}) => {
                 style={{ backgroundImage: `url(${imagen})` }}
             >
                 <p className="text-center text-[32px] font-titleCart sm:text-[48px] px-8">
-                    "{titulo}"
+                    {titulo}
                 </p>
             </div>
         </>
