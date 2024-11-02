@@ -49,7 +49,7 @@ const Header = () => {
               <a href="/aboutUs" className="text-black px-3 py-2">NOSOTROS</a>
             </li>
             <li className="my-2 sm:my-0 hover:underline">
-              <a href="#locales" className="text-black px-3 sm:pl-0 py-2">LOCALES</a>
+              <a href="/locales" className="text-black px-3 sm:pl-0 py-2">LOCALES</a>
             </li>
             <li className="my-2 sm:my-0 hover:underline">
               <a href="#productos" className="text-black px-3 sm:pl-0 py-2">PRODUCTOS</a>
@@ -69,10 +69,10 @@ const Header = () => {
               <a href="/contact" className="text-black pr-3 pl-2 py-2">Contacto</a>
             </li>
             <li className="my-2 sm:my-0 flex items-center hover:underline">
-              <a className="w-6 h-auto" href="#carrito">
+              <a className="w-6 h-auto" href="/cart">
                 <img src="carrito-tienda.png" alt="Tienda" />
               </a>
-              <a href="#carrito" className="text-black pr-3 pl-2 py-2">Tienda</a>
+              <a href="/cart" className="text-black pr-3 pl-2 py-2">Tienda</a>
             </li>
           </ul>
         </div>

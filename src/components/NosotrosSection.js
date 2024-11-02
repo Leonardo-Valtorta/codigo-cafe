@@ -1,7 +1,7 @@
 const NosotrosSection = () => {
     return (
         <>
-            <div className="flex flex-col bg-cafeNosotros p-8 font-bodyNosotros w-full justify-center sm:flex-row">
+            <div className="flex flex-col bg-cafeLight p-8 font-body w-full justify-center sm:flex-row">
                 <div className="py-4 sm:px-6 sm:w-[50%] sm:py-12">
                     <div className="flex justify-start sm:justify-center sm:py-6">
                         <h1 className="font-medium italic text-[24px]">
