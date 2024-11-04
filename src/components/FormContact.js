@@ -3,7 +3,7 @@ import PillButton from "./buttons/PillButton";
 function htmlFormContact() {
   return (
     <>
-      <htmlForm className="max-w-sm mx-auto">
+      <htmlForm className="max-w-sm mx-auto z-0">
         <div className="mb-5">
           <label
             htmlFor="nombre"
@@ -60,7 +60,6 @@ function htmlFormContact() {
             placeholder="Siéntete libre de escribir lo que quieras..."
           ></textarea>
         </div>
-        {/* Debe ir el componente Botón ↓ */}
         <PillButton className="bg-Btn-Agregar hover:bg-pink-900">
             Enviar
         </PillButton>
