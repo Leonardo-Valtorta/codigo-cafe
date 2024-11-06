@@ -19,23 +19,25 @@ export default function Products() {
                 <Link href="#cafes" className="p-4 border-2 hover:border-white hover:text-white px-3 sm:pl-0 py-2 hover:underline hover:bg-navbarBackgroundSecond">
                     CAFES
                 </Link>
+                <Link href="#otras-bebidas" className="p-4 border-2 hover:border-white hover:text-white px-3 sm:pl-0 py-2 hover:underline hover:bg-navbarBackgroundSecond">
+                    OTRAS BEBIDAS
+                </Link>
+                <Link href="#comida" className="p-4 border-2 hover:border-white hover:text-white px-3 sm:pl-0 py-2 hover:underline hover:bg-navbarBackgroundSecond">
+                    COMIDA
+                </Link>
                 
-                <div className="p-4 border-4 border-black">
-                    <p>Otras Bebidas</p>
-                </div>
-                <div className="p-4 border-4 border-black">
-                    <p>Comida</p>
-                </div>
             </div>
-            <div id="cafes" className="">
+            <section id="cafes" className="items-center text-center">
                 <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
-            </div>
-            <div id="otras-bebidas" className="">
+            </section>
+            <hr className="border-t-2 border-black my-3 mx-20"/> 
+            <section id="otras-bebidas" className="items-center text-center">
                 <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
-            </div>
-            <div id="comida" className="">
+            </section>
+            <hr className="border-t-2 border-black my-3 mx-20"/> 
+            <section id="comida" className="items-center text-center">
                 <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
-            </div>
+            </section>
         </div>
         
 
