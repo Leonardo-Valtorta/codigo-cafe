@@ -5,7 +5,8 @@ import IconMore from "../icons/IconMore";
 import IconLess from "../icons/IconLess";
 
 const ShoppingCard = ({item, deleteFromCart, addToCart}) => {
-      const {name, price, id, quantity} = item;
+    
+  const {name, price, id, quantity} = item;
 
     return (<>
   <div className="flex flex-col bg-bgShoppingCard p-2 shadow-xl my-4">
@@ -18,13 +19,10 @@ const ShoppingCard = ({item, deleteFromCart, addToCart}) => {
         <p className="py-2">Subtotal: $ {price} x {quantity} = $ {price * quantity} </p>
         <div>
             <IconButton onClick = {() => addToCart(id)} icon = {<IconMore/>}/>
-            <span className="text-xl">1</span>
+            <span className="text-xl">{quantity}</span>
             <IconButton onClick = {()=> deleteFromCart(id)} icon = {<IconLess/>}/>
         </div>
         <div className="self-end">
-       
-   {/* <PillButton onClick = {()=> deleteFromCart(id)} className="bg-btnRemoveItem hover:bg-btnRemoveItemHover"><IconRemove/>Eliminar uno</PillButton>*/ }
-       
         <PillButton onClick= {()=> deleteFromCart(id, true)} className="bg-btnRemoveItem hover:bg-btnRemoveItemHover"><IconRemove/>Eliminar</PillButton>
         </div>
       </div>

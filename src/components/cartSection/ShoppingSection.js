@@ -5,7 +5,6 @@ import { shoppingInitialState } from "@/reducer/shoppingInitialState"
 import { shoppingReducer } from "@/reducer/shoppingReducer"
 import { TYPES } from "@/actions/actions"
 import Product from "@/components/Product"
-import { useReducer } from "react"
 
 const itemsCards =[
     {
@@ -48,7 +47,7 @@ return (
     <main className=" bg-bgShoppingCart">
 {/**** PRODUCTOS DE MUESTRA ********/}
         <h3>Productos de muestra que hay que eliminar y pasar a la pagina productos</h3>
-             <div className="box grid-responsive">
+             <div className="flex flex-col justify-center">
             {
                 products.map (product => <Product key={product.id} product = {product} addToCart={addToCart}/>)
             }
@@ -60,7 +59,7 @@ return (
     <div className="flex flex-col items-center max-w-screen-sm m-auto">
     <section className="flex flex-col items-center w-4/5">
     <div className="flex flex-col justify-between p-0.5 w-4/5 ">
-        <ShoppingListCards itemsCards={cart} deletefromCart= {deleteFromCart}/>
+        <ShoppingListCards itemsCards={cart} deletefromCart= {deleteFromCart} addToCart={addToCart}/>
         <ShoppingFooter total= {total} clearCart = {clearCart}/>
     </div>
     </section>
