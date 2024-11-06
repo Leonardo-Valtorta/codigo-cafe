@@ -33,7 +33,7 @@ export function shoppingReducer (state, action) {
                 ? {
                     ...state,
                     cart: state.cart.map (item => 
-                        item.is === itemToDelete.id 
+                        item.id === itemToDelete.id 
                         ? {
                             ...item, quantity: item.quantity -1 
                         }

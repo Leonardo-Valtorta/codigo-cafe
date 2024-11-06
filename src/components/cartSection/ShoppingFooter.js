@@ -1,8 +1,10 @@
 import IconTrash from "../icons/IconTrash.js";
 import PillButton from "../buttons/PillButton.js";
 import PillButtonXL from "../buttons/PillButtonXL.js";
+
 const ShoppingFooter =(props) => {
-return (
+
+    return (
     <>
     <div className="flex flex-col justify-between items-center m-3">
         <p className="font-bold text-lg">Total: ${props.total}</p>

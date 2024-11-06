@@ -4,7 +4,7 @@ import IconRemove from "../icons/IconRemove";
 import IconMore from "../icons/IconMore"; 
 import IconLess from "../icons/IconLess";
 
-const ShoppingCard = ({item, deleteFromCart}) =>{
+const ShoppingCard = ({item, deleteFromCart, addToCart}) => {
       const {name, price, id, quantity} = item;
 
     return (<>
@@ -17,13 +17,15 @@ const ShoppingCard = ({item, deleteFromCart}) =>{
       <div className= "flex flex-col justify-between w-4/6 p-2">
         <p className="py-2">Subtotal: $ {price} x {quantity} = $ {price * quantity} </p>
         <div>
-            <IconButton icon = {<IconMore/>}/>
+            <IconButton onClick = {() => addToCart(id)} icon = {<IconMore/>}/>
             <span className="text-xl">1</span>
-            <IconButton icon = {<IconLess/>}/>
+            <IconButton onClick = {()=> deleteFromCart(id)} icon = {<IconLess/>}/>
         </div>
         <div className="self-end">
-        <PillButton onClick= {()=> deleteFromCart(id)} className="bg-btnRemoveItem hover:bg-btnRemoveItemHover"><IconRemove/>Eliminar uno</PillButton>
-        <PillButton onClick= {()=> deleteFromCart(id, true)} className="bg-btnRemoveItem hover:bg-btnRemoveItemHover"><IconRemove/>Eliminar todos</PillButton>
+       
+   {/* <PillButton onClick = {()=> deleteFromCart(id)} className="bg-btnRemoveItem hover:bg-btnRemoveItemHover"><IconRemove/>Eliminar uno</PillButton>*/ }
+       
+        <PillButton onClick= {()=> deleteFromCart(id, true)} className="bg-btnRemoveItem hover:bg-btnRemoveItemHover"><IconRemove/>Eliminar</PillButton>
         </div>
       </div>
     </div>

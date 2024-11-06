@@ -1,3 +1,4 @@
+import { useReducer } from "react";
 import ShoppingFooter from "./ShoppingFooter"
 import ShoppingListCards from "./ShoppingListCards"
 import { shoppingInitialState } from "@/reducer/shoppingInitialState"
@@ -43,6 +44,7 @@ const itemsCards =[
 
 return (
     <>
+    
     <main className=" bg-bgShoppingCart">
 {/**** PRODUCTOS DE MUESTRA ********/}
         <h3>Productos de muestra que hay que eliminar y pasar a la pagina productos</h3>
