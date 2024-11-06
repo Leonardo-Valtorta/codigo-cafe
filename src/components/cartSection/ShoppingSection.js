@@ -59,7 +59,7 @@ return (
     <div className="flex flex-col items-center max-w-screen-sm m-auto">
     <section className="flex flex-col items-center w-4/5">
     <div className="flex flex-col justify-between p-0.5 w-4/5 ">
-        <ShoppingListCards itemsCards={cart} deletefromCart= {deleteFromCart} addToCart={addToCart}/>
+        <ShoppingListCards itemsCards={cart} deleteFromCart= {deleteFromCart} addToCart={addToCart}/>
         <ShoppingFooter total= {total} clearCart = {clearCart}/>
     </div>
     </section>
