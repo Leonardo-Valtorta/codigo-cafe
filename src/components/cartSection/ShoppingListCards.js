@@ -5,7 +5,9 @@ return (
 <>
     <div>
         {
-        props.itemsCards.map(item => <ShoppingCard item = {item}/> )
+            console.log(props.itemsCards)
+}
+         {   props.itemsCards.map(item => <ShoppingCard item = {item} addToCart={props.addToCart} deleteFromCart={props.deleteFromCart}/> )
     }
     </div>
 </>

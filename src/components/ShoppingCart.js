@@ -36,7 +36,7 @@ const ShoppingCart = () => {
     <h3>Carrito</h3>
     <div className="box">
         {
-            cart.map ((item, i) => <ShoppingCard key={i} item = {item} deleteFromCart={deleteFromCart}/>)
+            cart.map ((item, i) => <ShoppingCard key={i} item = {item} addToCart={addToCart} deleteFromCart={deleteFromCart} />)
         }
     </div>
     <button onClick={clearCart}>Limpiar Carrito</button>

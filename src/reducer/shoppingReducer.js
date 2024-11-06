@@ -8,7 +8,7 @@ export function shoppingReducer (state, action) {
         case ADD_TO_CART: { 
             const newItem = state.products.find(product => product.id === action.payload) 
             
-           const itemInCart = state.cart.find(item => item.id === newItem.id)
+            const itemInCart = state.cart.find(item => item.id === newItem.id)
                    
             return itemInCart
                 ? {
@@ -33,7 +33,7 @@ export function shoppingReducer (state, action) {
                 ? {
                     ...state,
                     cart: state.cart.map (item => 
-                        item.is === itemToDelete.id 
+                        item.id === itemToDelete.id 
                         ? {
                             ...item, quantity: item.quantity -1 
                         }
