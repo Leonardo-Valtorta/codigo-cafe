@@ -1,5 +1,5 @@
 import axios from "axios"
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Api = () =>{
 
@@ -15,10 +15,6 @@ const Api = () =>{
     readState() 
     }, [])
     
-    return (
-        <>
-          {/*  {dbProducts.map(item => <h1>item.name</h1>)} */}
-         </>
-    )
+    return (dbProducts)
 }
 export default Api;

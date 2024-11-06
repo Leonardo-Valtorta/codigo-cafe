@@ -10,7 +10,8 @@ return (
             <PillButtonXL className="bg-btnBuy hover:bg-btnBuyAllHover">Comprar</PillButtonXL> 
         </div>
         <div className= "w-full text-center">
-            <PillButton className="bg-btnDeleteAll hover:bg-btnDeleteAllHover"><IconTrash/>Vaciar Carrito</PillButton>
+            <button onClick={props.clearCart}>Vaciar Carrito</button>
+            <PillButton className="bg-btnDeleteAll hover:bg-btnDeleteAllHover" onClick={props.clearCart}><IconTrash/>Vaciar Carrito</PillButton>
         </div>
     </div>
     </>
