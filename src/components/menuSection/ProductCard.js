@@ -1,10 +1,10 @@
 import PillButton from "../buttons/PillButton";
-import IconButton from "../buttons/IconButton";
 
 
-const ProductCard = (item,addToCart) =>{
 
-    const {name,price,image,description} = item;
+const ProductCard = (products,addToCart) =>{
+
+    const {name,price,image,description} = products;
 
     return (<>
         <div className="flex flex-col shadow-xl my-4">

@@ -3,15 +3,15 @@
       
       {
         "id": "1",
-        "image": "/imagen-cafe-americano.png",
-        "name": "Collar Rosa",
+        "image": "/menu/cafe-expreso",
+        "name": "Café Expresso",
         "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
         "category": "cafe",
         "price": 30
       },
       {
         "id": "2",
-        "image": "/imagen-cafe-americano.png",
+        "image": "/menu/cafe-americano.webp",
         "name": "Collar Rosa",
         "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
         "category": "cafe",
@@ -19,7 +19,7 @@
       },
       {
         "id": "3",
-        "image": "/imagen-cafe-americano.png",
+        "image": "/menu/cafe-capuchino.webp",
         "name": "Collar Rosa",
         "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
         "category": "cafe",
