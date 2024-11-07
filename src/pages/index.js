@@ -1,13 +1,18 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import HomeSection from "@/components/HomeSection";
 
 
+// const DynamicCarousel = dynamic(() => import('@/components/Carousel'), { ssr: false });
 export default function Home() {
   return (
     <>
-    <Header></Header>
-    <Footer></Footer>
+      <Header />
+      <HomeSection />
+      <Footer />
     </>
   );
 }
