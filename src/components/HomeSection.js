@@ -1,14 +1,12 @@
 import Link from 'next/link';
 import Portada from './Portada';
+import Carousel from './Carousel';
 
 const HomeSection = () => {
     return (
         <>
             <main className="flex flex-col items-center justify-between bg-backgroundMain">
-                <Portada 
-                  imagen={'/cafeteria.jpg'}
-                  titulo={''}
-                />
+              <Carousel />
                 <div className="flex flex-col w-full">
                   <div className="flex flex-col w-full p-6">
                     <h1 className="text-center font-semibold font-title text-[36px] mt-5 sm:text-[48px]">BIENVENIDOS</h1>
