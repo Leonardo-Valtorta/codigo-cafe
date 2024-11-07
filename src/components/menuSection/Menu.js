@@ -8,12 +8,14 @@ const Menu = () =>{
         return (<>    
            <section id="cafes" className="text-wrap items-center">
                 <h1 className="font-medium italic text-[24px] text-center md:text-left">Cafes</h1>
-                const 
-                {products
-                    .filter(product=> product.category === "cafes")
-                    .map (product => { return (<div><ProductCard key={product.id} product = {product} addToCart={addToCart}/><hr></hr></div>)})
-                }
-                <p className="text-[20px] font-light italic text-center">AAAAAAAAAAAAAAAAAAAA</p>
+                
+                <div className= "flex flex-col justify-center">
+                    {products
+                        .filter(product=> product.category === "cafes")
+                        .map (product => { return (<div><ProductCard key={product.id} product = {product} addToCart={addToCart}/><hr></hr></div>)})
+                    }
+                </div>
+                
             </section>
             <hr className="border-t-2 border-black my-3 mx-20"/> 
             <section id="otras-bebidas" className="text-wrap items-center">
