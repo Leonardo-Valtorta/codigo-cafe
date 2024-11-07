@@ -5,6 +5,8 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/flowbite/**/*.js",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
@@ -38,7 +40,15 @@ module.exports = {
         navbar: ["Pompiere", "sans-serif"],
         titleCart:["Jockey One", "sans-serif"],
         body: ["Roboto", "sans-serif"],
+        title: ["Gothic A1", "sans-serif"],
       },
+      backgroundImage: {
+        backgroundMain: "url('/bg.jpg')",
+        backgroundCafe: "url('/cafe.jpg')",
+        backgroundTostado: "url('/tostado.jpg')",
+        backgroundLocal: "url('/local.jpg')",
+        backgroundPersonal: "url('/personal.jpg')",
+      }
     },
   },
   plugins: [
