@@ -9,7 +9,7 @@ const ProductCard = (product,addToCart) =>{
 
     return (<>
         <div className="flex flex-col shadow-xl my-4">
-            <h3 className="text-[20px] font-medium italic">{product.name}</h3>
+            <h3 className="text-[20px] font-medium italic">{name}</h3>
             <h4 className="text-[10px] font-light italic">{description}</h4>
             <div className ="flex flex-row">
                 <div className="w-2/6 p-1">
