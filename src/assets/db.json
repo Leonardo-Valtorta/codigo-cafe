@@ -3,45 +3,163 @@
       
       {
         "id": "1",
-        "img": "/imagen-cafe-americano.png",
+        "image": "/imagen-cafe-americano.png",
         "name": "Collar Rosa",
         "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+        "category": "cafe",
         "price": 30
       },
       {
         "id": "2",
-        "img": "/imagen-cafe-frio.png",
-        "name": "Manta Beige",
-        "description": "Corderito sintético y gabardina.\nApto lavarropas.\n100cm x 80cm ",
-        "price": 260
+        "image": "/imagen-cafe-americano.png",
+        "name": "Collar Rosa",
+        "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+        "category": "cafe",
+        "price": 30
       },
       {
         "id": "3",
-        "img": "/imagen-cafe-expreso.png",
-        "name": "Manta Gris",
-        "description": "Corderito sintético y gabardina.\nApto lavarropas.\n100cm x 80cm",
-        "price": 260
+        "image": "/imagen-cafe-americano.png",
+        "name": "Collar Rosa",
+        "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+        "category": "cafe",
+        "price": 30
       },
       {
         "id": "4",
-        "img": "",
-        "name": "Plato",
-        "description": "Platos cerámicos con relieve.\nCada plato se vende por separado\nFáciles de limpiar.",
-        "price": 150
+        "image": "/imagen-cafe-americano.png",
+        "name": "Collar Rosa",
+        "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+        "category": "cafe",
+        "price": 30
       },
       {
         "id": "5",
-        "img": "",
-        "name": "Cama Dona",
-        "description": "Corderito sintético y gabardina. \nApto lavarropas.\nTamaño: 90cm x 35cm",
-        "price": 320
+        "image": "/imagen-cafe-americano.png",
+        "name": "Collar Rosa",
+        "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+        "category": "cafe",
+        "price": 30
       },
       {
         "id": "6",
-        "img": "",
-        "name": "Casa para Gatos",
-        "description": "Refugio suave para tu gato.\nExterior de gabardina.\nFondo antideslizante.",
-        "price": 350
+        "image": "/imagen-cafe-americano.png",
+        "name": "Collar Rosa",
+        "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+        "category": "cafe",
+        "price": 30
+      },
+      {
+        "id": "7",
+        "image": "/imagen-cafe-americano.png",
+        "name": "Collar Rosa",
+        "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+        "category": "cafe",
+        "price": 30
+      },
+      {
+        "id": "8",
+        "image": "/imagen-cafe-americano.png",
+        "name": "Collar Rosa",
+        "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+        "category": "cafe",
+        "price": 30
+      },
+      {
+        "id": "9",
+        "image": "/imagen-cafe-americano.png",
+        "name": "Collar Rosa",
+        "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+        "category": "cafe",
+        "price": 30
+      },
+      {
+        "id": "10",
+        "image": "/imagen-cafe-americano.png",
+        "name": "Collar Rosa",
+        "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+        "category": "cafe",
+        "price": 30
+      },
+      {
+        "id": "11",
+        "image": "/imagen-cafe-americano.png",
+        "name": "Collar Rosa",
+        "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+        "category": "cafe",
+        "price": 30
+      },
+      {
+        "id": "12",
+        "image": "/imagen-cafe-americano.png",
+        "name": "Collar Rosa",
+        "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+        "category": "cafe",
+        "price": 30
+      },
+      {
+        "id": "13",
+        "image": "/imagen-cafe-americano.png",
+        "name": "Collar Rosa",
+        "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+        "category": "cafe",
+        "price": 30
+      },
+      {
+        "id": "14",
+        "image": "/imagen-cafe-americano.png",
+        "name": "Collar Rosa",
+        "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+        "category": "cafe",
+        "price": 30
+      },
+      {
+        "id": "15",
+        "image": "/imagen-cafe-americano.png",
+        "name": "Collar Rosa",
+        "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+        "category": "cafe",
+        "price": 30
+      },
+      {
+        "id": "16",
+        "image": "/imagen-cafe-americano.png",
+        "name": "Collar Rosa",
+        "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+        "category": "cafe",
+        "price": 30
+      },
+      {
+        "id": "17",
+        "image": "/imagen-cafe-americano.png",
+        "name": "Collar Rosa",
+        "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+        "category": "cafe",
+        "price": 30
+      },
+      {
+        "id": "18",
+        "image": "/imagen-cafe-americano.png",
+        "name": "Collar Rosa",
+        "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+        "category": "cafe",
+        "price": 30
+      },
+      {
+        "id": "19",
+        "image": "/imagen-cafe-americano.png",
+        "name": "Collar Rosa",
+        "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+        "category": "cafe",
+        "price": 30
+      },
+      {
+        "id": "20",
+        "image": "/imagen-cafe-americano.png",
+        "name": "Collar Rosa",
+        "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+        "category": "cafe",
+        "price": 30
       }
     ],
     "cart": [
