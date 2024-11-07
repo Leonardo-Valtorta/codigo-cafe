@@ -2,7 +2,7 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PortadaDos from "@/components/PortadaDos";
-import Product from "@/components/Product";
+import ProductCard from "@/components/menuSection/ProductCard";
 
 
 export default function Products() {
@@ -30,6 +30,9 @@ export default function Products() {
             </div>
             <section id="cafes" className="text-wrap items-center">
                 <h1 className="font-medium italic text-[24px] text-center md:text-left">Cafes</h1>
+                {
+                    products.map (product => { return(<div><ProductCard key={product.category="cafe"} product = {product} addToCart={addToCart}/><hr></hr></div>)})
+                }
                 <p className="text-[20px] font-light italic text-center">AAAAAAAAAAAAAAAAAAAA</p>
             </section>
             <hr className="border-t-2 border-black my-3 mx-20"/> 
