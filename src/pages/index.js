@@ -1,6 +1,3 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HomeSection from "@/components/HomeSection";
