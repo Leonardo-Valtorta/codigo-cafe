@@ -19,8 +19,6 @@ const itemsCards =[
         image: './cafeconleche.jfif' }
     ];
 
-   const total = 7500 
-
    const {ADD_TO_CART, REMOVE_ONE_ITEM, REMOVE_ALL_ITEMS, CLEAR_CART } = TYPES;
 
    const ShoppingSection = () => {
@@ -40,16 +38,23 @@ const itemsCards =[
            }
            const clearCart = () => dispatch ({type: CLEAR_CART})
 
+           const { items, total } = cart.reduce(
+            ({ items, total }, { price, quantity }) => ({
+              items: items + quantity,
+              total: total + quantity * price
+            }),
+            { items: 0, total: 0 }
+          );
 
 return (
     <>
     
     <main className=" bg-bgShoppingCart">
 {/**** PRODUCTOS DE MUESTRA ********/}
-        <h3>Productos de muestra que hay que eliminar y pasar a la pagina productos</h3>
+        <h3>Productos de muestra que hay que eliminar y pasar a la pagina productos</h3><br></br>
              <div className="flex flex-col justify-center">
             {
-                products.map (product => <Product key={product.id} product = {product} addToCart={addToCart}/>)
+                products.map (product => { return(<div><Product key={product.id} product = {product} addToCart={addToCart}/><hr></hr></div>)})
             }
             </div>
 {/**** FIN PRODUCTOS DE MUESTRA ********/}

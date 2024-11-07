@@ -3,6 +3,9 @@ import { shoppingInitialState } from "./shoppingInitialState";
 
 const {ADD_TO_CART, REMOVE_ONE_ITEM, REMOVE_ALL_ITEMS, CLEAR_CART} = TYPES;
 
+export const initializer = (initialValue = shoppingInitialState) =>
+    JSON.parse(localStorage.getItem("localCart")) || initialValue;
+
 export function shoppingReducer (state, action) {
     switch (action.type) {
         case ADD_TO_CART: { 
