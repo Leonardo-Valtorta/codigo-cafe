@@ -12,42 +12,42 @@
       {
         "id": "2",
         "image": "/menu/cafe-americano.webp",
-        "name": "Collar Rosa",
+        "name": "Café Americano",
         "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
         "category": "cafe",
-        "price": 30
+        "price": 25
       },
       {
         "id": "3",
         "image": "/menu/cafe-capuchino.webp",
-        "name": "Collar Rosa",
+        "name": "Capuchino",
         "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
         "category": "cafe",
-        "price": 30
+        "price": 20
       },
       {
         "id": "4",
-        "image": "/imagen-cafe-americano.png",
-        "name": "Collar Rosa",
+        "image": "/menu/cafe-con-leche.webp",
+        "name": "Latte",
         "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
         "category": "cafe",
-        "price": 30
+        "price": 50
       },
       {
         "id": "5",
-        "image": "/imagen-cafe-americano.png",
-        "name": "Collar Rosa",
+        "image": "/menu/cafe-mocha.webp",
+        "name": "Mocha",
         "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
         "category": "cafe",
-        "price": 30
+        "price": 70
       },
       {
         "id": "6",
-        "image": "/imagen-cafe-americano.png",
-        "name": "Collar Rosa",
+        "image": "/menu/cafe-macchiato.webp",
+        "name": "Caramel Macchiato",
         "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
         "category": "cafe",
-        "price": 30
+        "price": 80
       },
       {
         "id": "7",
