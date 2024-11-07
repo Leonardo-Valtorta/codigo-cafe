@@ -5,10 +5,7 @@ const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0); 
 
   useEffect(() => {
-    const carouselElement = document.getElementById("default-carousel");
-    if (carouselElement) {
-  
-    }
+    import('flowbite');
   }, []);
 
   const totalItems = 5; 

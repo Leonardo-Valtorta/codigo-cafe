@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import Portada from './Portada';
-import Carousel from './Carousel';
+import dynamic from 'next/dynamic';
+
+const Carousel = dynamic(() => import('./Carousel'), { ssr: false });
 
 const HomeSection = () => {
     return (
