@@ -4,23 +4,26 @@ import IconRemove from "../icons/IconRemove";
 import IconMore from "../icons/IconMore"; 
 import IconLess from "../icons/IconLess";
 
-const ShoppingCard = (props) =>{
+const ShoppingCard = ({item, deleteFromCart, addToCart}) => {
+    
+  const {name, price, id, quantity} = item;
+
     return (<>
   <div className="flex flex-col bg-bgShoppingCard p-2 shadow-xl my-4">
-    <h4 className="bg-Coffee p-2 font-bold">{props.item.description}</h4>
+    <h4 className="bg-Coffee p-2 font-bold">{name}</h4>
     <div className ="flex flex-row">
       <div className="w-2/6 p-1">
-        <img src = {props.item.image} w-full object-contain/>
+        <img src = "cafeconleche.jfif"w-full object-contain/>
       </div>
       <div className= "flex flex-col justify-between w-4/6 p-2">
-        <p className="py-2">Subtotal: $ {props.item.price}</p>
+        <p className="py-2">Subtotal: $ {price} x {quantity} = $ {price * quantity} </p>
         <div>
-            <IconButton icon = {<IconMore/>}/>
-            <span className="text-xl">{props.item.quantity}</span>
-            <IconButton icon = {<IconLess/>}/>
+            <IconButton onClick = {() => addToCart(id)} icon = {<IconMore/>}/>
+            <span className="text-xl">{quantity}</span>
+            <IconButton onClick = {()=> deleteFromCart(id)} icon = {<IconLess/>}/>
         </div>
         <div className="self-end">
-        <PillButton className="bg-btnRemoveItem hover:bg-btnRemoveItemHover"><IconRemove/>Quitar</PillButton>
+        <PillButton onClick= {()=> deleteFromCart(id, true)} className="bg-btnRemoveItem hover:bg-btnRemoveItemHover"><IconRemove/>Eliminar</PillButton>
         </div>
       </div>
     </div>

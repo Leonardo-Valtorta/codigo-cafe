@@ -1,7 +1,7 @@
 const IconButton = (props) => {
     return (
     <>
-        <button>
+        <button onClick={props.onClick}>
         {props.icon}
         </button>
     </>
