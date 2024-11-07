@@ -4,14 +4,14 @@ import { estadoInicial } from "@/context/estadoInicial";
 const Menu = () =>{
         
         const products = estadoInicial.products;
-            
+        const addToCart = 0;    
         return (<>    
            <section id="cafes" className="text-wrap items-center">
                 <h1 className="font-medium italic text-[24px] text-center md:text-left">Cafes</h1>
                 
                 <div className= "flex flex-col justify-center">
                     {products
-                        .filter(product=> product.category === "cafes")
+                        .filter(product=> product.category === "cafe")
                         .map (product => { return (<div><ProductCard key={product.id} product = {product} addToCart={addToCart}/><hr></hr></div>)})
                     }
                 </div>
