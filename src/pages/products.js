@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PortadaDos from "@/components/PortadaDos";
 import ProductCard from "@/components/menuSection/ProductCard";
+import Menu from "@/components/menuSection/Menu";
 
 
 export default function Products() {
@@ -25,29 +26,11 @@ export default function Products() {
                 <Link href="#comida" className="p-4 border-2 hover:border-white hover:text-white px-3 sm:pl-0 py-2 hover:underline hover:bg-navbarBackgroundSecond">
                     COMIDA
                 </Link>
-              
-                
+                      
             </div>
-            <section id="cafes" className="text-wrap items-center">
-                <h1 className="font-medium italic text-[24px] text-center md:text-left">Cafes</h1>
-                {
-                    products.map (product => { return(<div><ProductCard key={product.category="cafe"} product = {product} addToCart={addToCart}/><hr></hr></div>)})
-                }
-                <p className="text-[20px] font-light italic text-center">AAAAAAAAAAAAAAAAAAAA</p>
-            </section>
-            <hr className="border-t-2 border-black my-3 mx-20"/> 
-            <section id="otras-bebidas" className="text-wrap items-center">
-                <h1 className="font-medium italic text-[24px] text-center md:text-left">Otras Bebidas</h1>
-                <p>AAAAAAAAAAAAAAAAAAAAAAAAA</p>
-            </section>
-            <hr className="border-t-2 border-black my-3 mx-20"/> 
-            <section id="comida" className="text-wrap items-center">
-                <h1 className="font-medium italic text-[24px] text-center md:text-left">Comida</h1>
-                <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
-            </section>
-        </div>
         
-
+            <Menu />
+        </div>
         <Footer />
     </>
     )

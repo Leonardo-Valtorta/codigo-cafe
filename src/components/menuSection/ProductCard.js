@@ -2,9 +2,9 @@ import PillButton from "../buttons/PillButton";
 
 
 
-const ProductCard = (products,addToCart) =>{
+const ProductCard = (product,addToCart) =>{
 
-    const {name,price,image,description} = products;
+    const {name,price,image,description} = product;
 
     return (<>
         <div className="flex flex-col shadow-xl my-4">
