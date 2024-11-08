@@ -46,6 +46,9 @@ const Header = () => {
 
         <div className={`w-full sm:flex sm:items-center sm:w-full ${isOpen ? 'block' : 'hidden'}`}>
           <ul className="flex flex-col py-3 px-0 items-start justify-evenly w-full sm:flex-row sm:items-center sm:w-full">
+          <li className="my-2 sm:my-0 hover:underline">
+              <Link href="/" className="text-black px-3 py-2">INICIO</Link>
+            </li>
             <li className="my-2 sm:my-0 hover:underline">
               <Link href="/aboutUs" className="text-black px-3 py-2">NOSOTROS</Link>
             </li>
