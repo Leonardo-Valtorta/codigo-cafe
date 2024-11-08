@@ -1,7 +1,11 @@
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 import React from 'react';
 
 const TrabajaConNosotros = () => {
   return (
+    <>
+    <Header />
     <section className="rounded-lg font-sans flex flex-col items-center gap-6 md:gap-24 md:flex-row md:justify-around lg:px-12 m-8">
       <h2 className="text-[24px] font-bold md:hidden">TRABAJA CON NOSOTROS</h2>
       
@@ -32,6 +36,8 @@ const TrabajaConNosotros = () => {
         </div>
       </div>
     </section>
+    <Footer />
+    </>
   );
 };
 
