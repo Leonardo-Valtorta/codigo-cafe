@@ -56,7 +56,7 @@ const Header = () => {
               <Link href="/products" className="text-black px-3 sm:pl-0 py-2">PRODUCTOS</Link>
             </li>
             <li className="my-2 sm:my-0 hover:underline">
-              <Link href="#trabaja" className="text-black pl-3 sm:pl-0 py-2 text-center">TRABAJA CON NOSOTROS</Link>
+              <Link href="/trabajaConNosotros" className="text-black pl-3 sm:pl-0 py-2 text-center">TRABAJA CON NOSOTROS</Link>
             </li>
           </ul>
         </div>
