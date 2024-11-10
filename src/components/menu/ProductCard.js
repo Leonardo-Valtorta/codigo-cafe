@@ -3,7 +3,7 @@ import IconPlus from "../icons/IconPlus";
 
 
 
-const ProductCard = (product,addToCart) =>{
+const ProductCard = ({product,addToCart}) =>{
 
     const {id,name,price,image,description} = product;
 
@@ -13,7 +13,7 @@ const ProductCard = (product,addToCart) =>{
             <h4 className="text-[10px] font-light italic">{description}</h4>
             <div className ="flex flex-row">
                 <div className="w-2/6 p-1">
-                    <img src = {image} w-full object-contain/>
+                    <img src = {image} alt={name} className="w-full object-contain"/>
                 </div>
                 <div className= "flex flex-col justify-between w-4/6 p-2">
                     <p className="py-2 font-bold-italic">Precio: $ {price}</p>

@@ -2,8 +2,7 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PortadaDos from "@/components/PortadaDos";
-import ProductCard from "@/components/menuSection/ProductCard";
-import Menu from "@/components/menuSection/Menu";
+import MenuSection from "@/components/menu/MenuSection";
 
 
 export default function Products() {
@@ -29,7 +28,7 @@ export default function Products() {
                       
             </div>
         
-            <Menu />
+            <MenuSection section="cafes" sectionName="Cafés" category="cafe" />
         </div>
         <Footer />
     </>

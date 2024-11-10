@@ -3,7 +3,7 @@ export const estadoInicial = {
     products: [
         {
             id: 1,
-            image: "/menu/cafe-expreso",
+            image: "/menu/cafe-expreso.webp",
             name: "Café Expresso",
             description: "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
             category: "cafe",
