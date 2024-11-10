@@ -5,6 +5,7 @@ import { shoppingInitialState } from "@/reducer/shoppingInitialState"
 import { shoppingReducer } from "@/reducer/shoppingReducer"
 import { TYPES } from "@/actions/actions"
 import Product from "@/components/Product"
+import PortadaDos from "../PortadaDos";
 
 const itemsCards =[
     {
@@ -58,9 +59,13 @@ return (
             }
             </div>
 {/**** FIN PRODUCTOS DE MUESTRA ********/}
-    <div className="flex flex-col items-center bg-white py-1">
+
+    <PortadaDos 
+        titulo={'Mi Pedido'}
+    />
+    {/* <div className="flex flex-col items-center bg-white py-1">
         <h4 className="font-titleCart text-2xl">Mi Pedido</h4>
-    </div>
+    </div> */}
     <div className="flex flex-col items-center max-w-screen-sm m-auto">
     <section className="flex flex-col items-center w-4/5">
     <div className="flex flex-col justify-between p-0.5 w-4/5 ">
