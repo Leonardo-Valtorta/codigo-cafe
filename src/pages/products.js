@@ -13,12 +13,12 @@ export default function Products() {
             <Header />
         </div>
             <PortadaDos
-                titulo={'PRODUCTOS'}
+                titulo={'Nuestros Productos'}
             />
         <div>
-            <div className="sticky z-20 top-0  text-center bg-cafeLight w-full h-20 pb-4 md:h-30 grid grid-cols-3 font-navbar text-2xl font-bold">
+            <div className="sticky z-20 top-0  text-center bg-cafeLight w-full h-20 pb-4 md:h-30 grid grid-cols-3 font-titleCart text-2xl font-bold">
                 <Link href="#cafes" className="p-4 border-2 hover:border-white hover:text-white px-3 sm:pl-0 py-2 hover:underline hover:bg-navbarBackgroundSecond">
-                    CAFES
+                    CAFÉS
                 </Link>
                 <Link href="#otras-bebidas" className="p-4 border-2 hover:border-white hover:text-white px-3 sm:pl-0 py-2 hover:underline hover:bg-navbarBackgroundSecond">
                     OTRAS BEBIDAS

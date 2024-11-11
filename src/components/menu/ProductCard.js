@@ -13,7 +13,7 @@ const ProductCard = ({product,addToCart}) =>{
             <h4 className="text-[15px] font-light italic">{description}</h4>
             <div className ="flex flex-row">
                 <div className="w-2/6 p-1 md:w-150">
-                    <img src = {image} alt={name} className="w-full object-fit"/>
+                    <img src = {image} alt={name} className="h-full "/>
                 </div>
                 <div className= "flex flex-col  self-end w-4/6 p-2 md:w-300">
                     <p className="py-2 font-bold-italic text-right">Precio: $ {price}</p>
