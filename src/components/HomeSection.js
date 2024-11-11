@@ -19,10 +19,10 @@ const HomeSection = () => {
             </p>
           </div>
           <div className="flex justify-center">
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid xl:grid-cols-4 gap-4 md:grid-cols-2">
               <CardTurn 
                 imagen="/cafe.jpg" 
-                pagina="/aboutUS" 
+                pagina="/aboutUs" 
                 texto="NOSOTROS" 
               />
               <CardTurn 
@@ -37,7 +37,7 @@ const HomeSection = () => {
               />
               <CardTurn
                 imagen="/personal.jpg"
-                pagina="/aboutUs"
+                pagina="/trabajaConNosotros"
                 texto="TRABAJA"
               />
             </div>
