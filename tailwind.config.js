@@ -44,10 +44,6 @@ module.exports = {
       },
       backgroundImage: {
         backgroundMain: "url('/bg.jpg')",
-        backgroundCafe: "url('/cafe.jpg')",
-        backgroundTostado: "url('/tostado.jpg')",
-        backgroundLocal: "url('/local.jpg')",
-        backgroundPersonal: "url('/personal.jpg')",
       }
     },
   },
