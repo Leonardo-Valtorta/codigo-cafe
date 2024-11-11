@@ -3,9 +3,9 @@ export const estadoInicial = {
     products: [
         {
             id: 1,
-            image: "/menu/cafe-expreso",
+            image: "/menu/cafe-expreso.webp",
             name: "Café Expresso",
-            description: "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+            description: "Descripción: Un café concentrado preparado forzando agua caliente a alta presión a través de café finamente molido. Características: Intensidad y sabor robusto.",
             category: "cafe",
             price: 30
           },
@@ -13,7 +13,7 @@ export const estadoInicial = {
             id: 2,
             image: "/menu/cafe-americano.webp",
             name: "Café Americano",
-            description: "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+            description: "Descripción: Espresso al que se le añade agua caliente.Características: Menos intenso que un espresso, similar al café filtrado.",
             category: "cafe",
             price: 25
           },
@@ -21,7 +21,7 @@ export const estadoInicial = {
             id: 3,
             image: "/menu/cafe-capuchino.webp",
             name: "Capuchino",
-            description: "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+            description: "Descripción: Igual proporción de espresso,leche vaporizada y espuma de leche. Características: Textura cremosa y equilibrio entre café y leche.",
             category: "cafe",
             price: 20
           },
@@ -29,7 +29,7 @@ export const estadoInicial = {
             id: 4,
             image: "/menu/cafe-con-leche.webp",
             name: "Latte",
-            description: "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+            description: "Descripción: Mayor cantidad de leche vaporizada con una pequeña cantidad de espresso. Características: Suave y cremoso, ideal para quienes prefieren menos intensidad de café.",
             category: "cafe",
             price: 50
           },
@@ -37,7 +37,7 @@ export const estadoInicial = {
             id: 5,
             image: "/menu/cafe-mocha.webp",
             name: "Mocha",
-            description: "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+            description: "Descripción: Mezcla de espresso, leche vaporizada y chocolate. Características: Sabor dulce y rico, ideal para los amantes del chocolate.",
             category: "cafe",
             price: 70
           },
@@ -45,7 +45,7 @@ export const estadoInicial = {
             id: 6,
             image: "/menu/cafe-macchiato.webp",
             name: "Caramel Macchiato",
-            description: "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+            description: "Descripción: Espresso con leche vaporizada y sirope de caramelo. Características: Dulce y cremoso con un toque de caramelo.",
             category: "cafe",
             price: 80
           },
@@ -53,7 +53,7 @@ export const estadoInicial = {
             id: 7,
             image: "/menu/cafe-frio.webp",
             name: "Café Helado",
-            description: "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+            description: "Descripción: Café preparado frío, servido con hielo.",
             category: "cafe",
             price: 30
           },
@@ -61,105 +61,105 @@ export const estadoInicial = {
             id: 8,
             image: "/menu/cafe-cold-brew.webp",
             name: "Cold Brew",
-            description: "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+            description: "Descripción: Café preparado mediante la infusión de café molido en agua fría durante varias horas. Características: Sabor suave y menos ácido.",
             category: "cafe",
-            price: 30
+            price: 100
           },
           {
             id: 9,
             image: "/menu/comida-cheesecake.jfif",
             name: "Cheesecake",
-            description: "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+            description: "El cheesecake de frutos rojos es un postre elegante y delicioso, con una base de galleta crujiente y una crema suave y cremosa de queso con un toque ácido. La parte superior del cheesecake está cubierta con una capa de mermelada de frutos rojos, que añade un sabor dulce y afrutado a la torta.",
             category: "comida",
-            price: 30
+            price: 110
           },
           {
             id: 10,
             image: "/menu/comida-chocotorta.jfif",
             name: "Chocotorta",
-            description: "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+            description: " Postre que combina capas de galletas chocolinas, crema (dulce de leche y queso crema) y helado chocuquina.",
             category: "comida",
-            price: 30
+            price: 150
           },
           {
             id: 11,
             image: "/menu/comida-churros.jfif",
             name: "Churros",
-            description: "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+            description: "Crujientes churros rellenos de dulce de leche, crema pastelera o chocolate. Precio por media docena.",
             category: "comida",
-            price: 30
+            price: 190
           },
           {
             id: 12,
             image: "/menu/comida-crepe.jfif",
             name: "Crepe",
-            description: "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+            description: "Las crepes con chocolate son un clásico francés que conquista paladares en todo el entorno. Su textura fina y delicada, combinada con el sabor intenso del chocolate, las convierte en un postre irresistible para cualquier ocasión.",
             category: "comida",
-            price: 30
+            price: 175
           },
           {
             id: 13,
             image: "/menu/comida-lemonpie.jfif",
             name: "Lemon Pie",
-            description: "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+            description: "El lemon pie o tarta de limón es una combinación de base crujiente, con relleno cremoso de limón y una capa de merengue.",
             category: "comida",
-            price: 30
+            price: 200
           },
           {
             id: 14,
             image: "/menu/comida-tostados.jfif",
             name: "Tostados de Miga",
-            description: "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+            description: "4 tostados de miga de jamón y queso",
             category: "comida",
-            price: 30
+            price: 140
           },
           {
             id: 15,
             image: "/menu/otras-jugoExprimido.jfif",
             name: "Jugo de Naranja Exprimido",
-            description: "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+            description: "Delicioso jugo de naranja exprimido fresco",
             category: "otras",
-            price: 30
+            price: 90
           },
           {
             id: 16,
             image: "/menu/otras-licuado.webp",
             name: "Licuado frutal",
-            description: "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+            description: "Licuado frutal con agua o leche. Frutas: frutilla, banana, durazno, naranja, melón, ananá.",
             category: "otras",
-            price: 30
+            price: 110
           },
           {
             id: 17,
             image: "/menu/otras-limonada.jfif",
             name: "Limonada",
-            description: "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+            description: "Limonada con hielo",
             category: "otras",
-            price: 30
+            price: 100
           },
           {
             id: 18,
             image: "/menu/otras-submarino.webp",
             name: "Submarino",
-            description: "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+            description: "Leche cremosa caliente con una tableta de chocolate semiamargo",
             category: "otras",
-            price: 30
+            price: 130
           },
           {
             id: 19,
             image: "/menu/otras-teDeLaCasa.webp",
             name: "Té de la Casa",
-            description: "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+            description: "Té de la casa Una armoniosa combinación de manzanilla, menta y un toque de jengibre. Relajante y digestivo.",
             category: "otras",
-            price: 30
+            price: 85
           },
           {
             id: 20,
             image: "/menu/otras-teVerde.jfif",
             name: "Té Verde",
-            description: "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+            description: "Rico en antioxidantes, nuestro té verde te ayudará a mantenerte saludable y concentrado. Un clásico con un toque especial.",
             category: "otras",
-            price: 30
+            price: 75
           }
         
     ],

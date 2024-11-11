@@ -12,7 +12,7 @@ const Footer = () => {
             <a href="/locales" className="hover:underline me-4 md:me-6">Locales</a>
         </li>
         <li>
-            <a href="#" className="hover:underline me-4 md:me-6">Productos</a>
+            <a href="/products" className="hover:underline me-4 md:me-6">Productos</a>
         </li>
         <li>
             <a href="/contact" className="hover:underline">Contacto</a>
