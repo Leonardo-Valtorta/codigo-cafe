@@ -6,14 +6,14 @@ import IconLess from "../icons/IconLess";
 
 const ShoppingCard = ({item, deleteFromCart, addToCart}) => {
     
-  const {name, price, id, quantity} = item;
+  const {name, price, id, quantity,image} = item;
 
     return (<>
   <div className="flex flex-col bg-bgShoppingCard p-2 shadow-xl my-4">
     <h4 className="bg-Coffee p-2 font-bold">{name}</h4>
     <div className ="flex flex-row">
       <div className="w-2/6 p-1">
-        <img src = "cafeconleche.jfif"w-full object-contain/>
+        <img src = {image} className= "w-full h-full object-cover " />
       </div>
       <div className= "flex flex-col justify-between w-4/6 p-2">
         <p className="py-2">Subtotal: $ {price} x {quantity} = $ {price * quantity} </p>

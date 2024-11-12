@@ -9,7 +9,7 @@ const MenuSection = ({section,sectionName,category}) =>{
         const addToCart = 0;    
         return (<>    
            <section id={section} className="items-center mx-[6vw]">
-                <h1 className="font-medium italic text-[6vh] md:text-[8vh] text-center md:text-left underline">{sectionName}</h1>
+                <h1 className="font-medium font-titleCart text-[6vh] md:text-[8vh] text-center md:text-left">{sectionName}</h1>
                 
                 <div className= "flex flex-col justify-center grid md:grid-cols-2 gap-4">
                     {products
