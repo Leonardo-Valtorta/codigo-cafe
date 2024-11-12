@@ -1,11 +1,11 @@
 import ProductCard from "./ProductCard";
-import { estadoInicial } from "@/context/estadoInicial";
+import { shoppingInitialState } from "@/reducer/shoppingInitialState"
 
 const MenuSection = ({section,sectionName,category}) =>{
 
         
         
-        const products = estadoInicial.products;
+        const products = shoppingInitialState.products;
         const addToCart = 0;    
         return (<>    
            <section id={section} className="items-center mx-[6vw]">

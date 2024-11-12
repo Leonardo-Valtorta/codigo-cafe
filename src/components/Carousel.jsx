@@ -67,7 +67,7 @@ const Carousel = () => {
         <button type="button" className="w-3 h-3 rounded-full bg-white" onClick={() => showItem(1)}></button>
         <button type="button" className="w-3 h-3 rounded-full bg-white" onClick={() => showItem(2)}></button>
         <button type="button" className="w-3 h-3 rounded-full bg-white" onClick={() => showItem(3)}></button>
-        <button type="button" className="w-3 h-3 rounded-full bg-white" onClick={() => showItem(3)}></button>
+        <button type="button" className="w-3 h-3 rounded-full bg-white" onClick={() => showItem(4)}></button>
       </div>
 
       <button type="button" className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 focus:outline-none" onClick={prevItem}>
