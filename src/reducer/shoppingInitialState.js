@@ -2,7 +2,7 @@
 
 export const shoppingInitialState = {
       products: [
-          {
+/*          {
             id: 1,
             image: "/menu/cafe-expreso.webp",
             name: "Café Expresso",
@@ -161,7 +161,8 @@ export const shoppingInitialState = {
             description: "Rico en antioxidantes, nuestro té verde te ayudará a mantenerte saludable y concentrado. Un clásico con un toque especial.",
             category: "otras",
             price: 75
-          }
+          } 
+       */
         
     ],
     cart: [],

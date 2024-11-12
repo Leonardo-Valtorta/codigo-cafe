@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import { useReducer,useState } from "react";
 import ShoppingFooter from "./ShoppingFooter"
 import ShoppingListCards from "./ShoppingListCards"
 import { shoppingInitialState } from "@/reducer/shoppingInitialState"
@@ -24,10 +24,32 @@ const itemsCards =[
 
    const ShoppingSection = () => {
     
-           const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState)
+        const getProducts = async() =>{
+            const ENDPOINT= "http://localhost:5000/products";
+            const response = axios.get(ENDPOINT);
+            const dbProducts = (await response).data;
+            console.log(dbProducts);
+        }                       
+
+        const getItemsCart = async() =>{
+            const ENDPOINT= "http://localhost:5000/cart";
+            const response = axios.get(ENDPOINT);
+            const dbItems = (await response).data;
+            console.log(dbItems);
+        }
+        const init = (shoppingInitialState) =>{
+            shoppingInitialState.products= getProducts();    
+        // console.log(shoppingInitialState.Products);
+            shoppingInitialState.cart= [];//getItemsCart();    
+            return (shoppingInitialState) 
+       }
+        
+    
+    const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState, init)
    
            const {products, cart} = state
-           
+
+          
            const addToCart = (id) => dispatch ({type: ADD_TO_CART, payload: id})
            
            const deleteFromCart = (id, all = false) => {

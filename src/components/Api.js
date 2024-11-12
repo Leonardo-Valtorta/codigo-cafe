@@ -3,18 +3,32 @@ import { useEffect, useState } from "react";
 
 const Api = () =>{
 
-    const readState = async() =>{
+    const getProducts = async() =>{
 
         const ENDPOINT= "http://localhost:5000/products";
         const response = axios.get(ENDPOINT);
         const dbProducts = (await response).data;
         console.log(dbProducts);
-
     }
+
+    const getItemsCart = async() =>{
+
+        const ENDPOINT= "http://localhost:5000/cart";
+        const response = axios.get(ENDPOINT);
+        const dbItems = (await response).data;
+        console.log(dbItems);
+    }
+
+
     useEffect(() => {
-    readState() 
+    getItemsCart()
+    getProducts() 
     }, [])
     
-    return (dbProducts)
+    return (
+        <>
+        hola
+        </>
+        )
 }
 export default Api;
