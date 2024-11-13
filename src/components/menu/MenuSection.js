@@ -1,5 +1,5 @@
 import ProductCard from "./ProductCard";
-import { ShoppingContext } from "../context/ShoppingContextProvider"
+import { ShoppingContext } from "@/context/ShoppingContextProvider";
 import { useContext, useState, useEffect } from "react";
 
 

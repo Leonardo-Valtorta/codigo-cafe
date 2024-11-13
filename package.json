@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "apilocal": "run start && run cafeDb",
+    "apilocal": "npm run build && npm run cafeDb",
     "lint": "next lint",
     "cafeDb": "json-server --port 5000 --watch src/db/db.json"
   },
