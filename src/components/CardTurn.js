@@ -3,7 +3,7 @@ import Link from "next/link";
 function CardTurn({ imagen, pagina, texto }) {
   return (
     <>
-      <div className="card-turn">
+      <div className="card-turn shadow-md">
         <div className="card-inner">
           <div className="card-front flex  items-center justify-center">
             <img
