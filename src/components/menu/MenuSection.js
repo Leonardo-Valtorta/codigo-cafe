@@ -1,5 +1,7 @@
-import ProductCard from "./ProductCard";
+
 import { ShoppingContext } from "@/context/ShoppingContextProvider";
+import ProductCard from "./ProductCard";
+
 import { useContext, useState, useEffect } from "react";
 
 
@@ -8,11 +10,11 @@ import { useContext, useState, useEffect } from "react";
  
 
 const MenuSection = ({section,sectionName,category}) =>{
-
+        
         const {db, READ_DATA, ADD_ITEM_TO_CART} = useContext(ShoppingContext);
         useEffect(() => {READ_DATA()}, []);
-        const {products, cart} = db; 
-  
+       
+        const {products,cart} = db;
         
      
         return (<>    
@@ -22,7 +24,7 @@ const MenuSection = ({section,sectionName,category}) =>{
                 <div className= "flex flex-col justify-center grid md:grid-cols-2 gap-4">
                     {products
                         .filter(product=> product.category === category)
-                        .map (product => { return (<div><ProductCard key={product.id} product = {product} addToCart={ADD_ITEM_TO_CART}/></div>)})
+                        .map ((product) =>  <ProductCard key={product.id} product = {product} addToCart={ADD_ITEM_TO_CART}/>)
                     }
                 </div>
                 

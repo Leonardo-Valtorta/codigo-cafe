@@ -41,7 +41,7 @@ const ENDPOINTS = {
 const ShoppingContextProvider = (props) => {
 
   const [db, setDb] = useState (initialDb);
-  const {products, cart} = db; 
+  const { products = [], cart = [] } = db;
   const [infoCartState, setInfoCartState] = useState({ ItemsInCart: 0, TotalCartPrice: 0 });
 
   const READ_DATA = async () => {
@@ -69,6 +69,7 @@ const ShoppingContextProvider = (props) => {
     };
 
     setDb(data)
+    console.log("Updated DB:", data);
   };
 
   const CREATE_ITEM_IN_CART = async (item) => {

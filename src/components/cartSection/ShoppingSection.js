@@ -55,7 +55,7 @@ return (
         <h3>Productos de muestra que hay que eliminar y pasar a la pagina productos</h3><br></br>
              <div className="flex flex-col justify-center">
             {
-                products.map (product => { return(<div><Product key={product.id} product = {product} addToCart={addToCart}/><hr></hr></div>)})
+                products.map ((product) => <Product key={product.id} product = {product} addToCart={addToCart}/>)
             }
             </div>
 {/**** FIN PRODUCTOS DE MUESTRA ********/}
