@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "apilocal": "npm run build && npm run cafeDb",
     "lint": "next lint",
-    "cafeDb": "json-server --port 5000 --watch src/db/db.json"
+    "cafeDb": "json-server --port 5000 --watch src/assets/db.json"
   },
   "dependencies": {
     "axios": "^1.7.7",
