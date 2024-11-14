@@ -19,7 +19,7 @@ const HomeSection = () => {
             </p>
           </div>
           <div className="flex justify-center pt-3">
-            <div className="grid xl:grid-cols-4 gap-4 md:grid-cols-2 opacity-100">
+            <div className="grid gap-4 lg:grid-cols-4 sm:grid-cols-2 opacity-100">
               <CardTurn 
                 imagen="/cafe.jpg" 
                 pagina="/aboutUs" 
