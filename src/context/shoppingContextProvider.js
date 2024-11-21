@@ -41,7 +41,7 @@ const ENDPOINTS = {
 const ShoppingContextProvider = (props) => {
 
   const [db, setDb] = useState (initialDb);
-  const { products = [], cart = [] } = db;
+  const { products , cart  } = db;
   const [infoCartState, setInfoCartState] = useState({ ItemsInCart: 0, TotalCartPrice: 0 });
 
   const READ_DATA = async () => {
@@ -88,7 +88,6 @@ const ShoppingContextProvider = (props) => {
   };
 
   const UPDATE_ITEM_IN_CART = async (itemIsInCart) => {
-    let id = itemIsInCart.id;
     itemIsInCart.qty = itemIsInCart.qty + 1;
 
     const OPTIONS = {
@@ -154,7 +153,21 @@ const ShoppingContextProvider = (props) => {
     READ_DATA();
   };
 
-  const value = {db, READ_DATA, ADD_ITEM_TO_CART, DELETE_ITEM_IN_CART, DELETE_ONE_ITEM_IN_CART, infoCartState};
+  const EMPTY_CART = async () => {
+    try {
+      
+      for (let i = 0; i < cart.length; i++) {
+        await DELETE_ITEM_IN_CART(cart[i].id); 
+      }
+      console.log("Todos los productos eliminados correctamente");
+    } catch (error) {
+      console.error("Error eliminando productos:", error);
+    }
+
+    READ_DATA();
+  };
+
+  const value = {db, READ_DATA, ADD_ITEM_TO_CART, DELETE_ITEM_IN_CART, DELETE_ONE_ITEM_IN_CART,EMPTY_CART, infoCartState};
 
   return (
     <ShoppingContext.Provider value = {value} >

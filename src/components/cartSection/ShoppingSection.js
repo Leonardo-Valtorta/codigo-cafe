@@ -6,6 +6,8 @@ import { shoppingReducer } from "@/reducer/shoppingReducer"
 import { TYPES } from "@/actions/actions"
 import Product from "@/components/Product"
 import PortadaDos from "../PortadaDos";
+import { ShoppingContext } from "@/context/shoppingContextProvider";
+import { useContext, useEffect } from "react";
 
 const itemsCards =[
     {
@@ -20,11 +22,19 @@ const itemsCards =[
         image: './cafeconleche.jfif' }
     ];
 
-   const {ADD_TO_CART, REMOVE_ONE_ITEM, REMOVE_ALL_ITEMS, CLEAR_CART } = TYPES;
+   
+
+   
 
    const ShoppingSection = () => {
-    
-           const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState)
+
+        const {db, READ_DATA, ADD_ITEM_TO_CART, DELETE_ITEM_IN_CART, DELETE_ONE_ITEM_IN_CART, EMPTY_CART} = useContext(ShoppingContext);
+        useEffect(() => {READ_DATA()}, []);
+
+        const {products,cart} = db;
+
+        const total = cart.reduce((acumulator, item) => acumulator + item.price * item.qty, 0);
+          {/* const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState)
    
            const {products, cart} = state
            
@@ -45,20 +55,20 @@ const itemsCards =[
               total: total + quantity * price
             }),
             { items: 0, total: 0 }
-          );
+          );  */}
 
 return (
     <>
     
     <main className=" bg-bgShoppingCart">
-{/**** PRODUCTOS DE MUESTRA ********/}
+    {/* /**** PRODUCTOS DE MUESTRA 
         <h3>Productos de muestra que hay que eliminar y pasar a la pagina productos</h3><br></br>
              <div className="flex flex-col justify-center">
             {
                 products.map ((product) => <Product key={product.id} product = {product} addToCart={addToCart}/>)
             }
             </div>
-{/**** FIN PRODUCTOS DE MUESTRA ********/}
+    {/**** FIN PRODUCTOS DE MUESTRA ********/} 
 
     <PortadaDos 
         titulo={'Mi Pedido'}
@@ -69,8 +79,8 @@ return (
     <div className="flex flex-col items-center max-w-screen-sm m-auto">
     <section className="flex flex-col items-center w-4/5">
     <div className="flex flex-col justify-between p-0.5 w-4/5 ">
-        <ShoppingListCards itemsCards={cart} deleteFromCart= {deleteFromCart} addToCart={addToCart}/>
-        <ShoppingFooter total= {total} clearCart = {clearCart}/>
+        <ShoppingListCards itemsCards={cart} deleteOneFromCart= {DELETE_ONE_ITEM_IN_CART} deleteFromCart={DELETE_ITEM_IN_CART} addToCart={ADD_ITEM_TO_CART}/>
+        <ShoppingFooter total= {total} emptyCart= {EMPTY_CART}/>
     </div>
     </section>
     </div>

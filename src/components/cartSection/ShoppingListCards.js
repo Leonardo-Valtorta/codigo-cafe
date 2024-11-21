@@ -2,13 +2,13 @@ import ShoppingCard from "./ShoppingCard"
 
 const ShoppingListCards = (props) => {
 
-    const {itemsCards , deleteFromCart, addToCart}= props;
+    const {itemsCards , deleteOneFromCart, deleteFromCart, addToCart}= props;
 
 return (
 <>
     <div>
          {
-         itemsCards.map ((item, i) => <ShoppingCard key={i} item = {item} deleteFromCart={deleteFromCart} addToCart={addToCart}/>)
+         itemsCards.map ((item, i) => <ShoppingCard key={i} item = {item} deleteOneFromCart={deleteOneFromCart} deleteFromCart={deleteFromCart} addToCart={addToCart}/>)
     }
     </div>
 </>
