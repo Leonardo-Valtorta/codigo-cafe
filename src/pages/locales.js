@@ -2,12 +2,17 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import LocalesCard from "@/components/LocalesCard";
 import Portada from "@/components/Portada";
+import Head from "next/head";
 
 
 
 export default function locales() {
     return (
         <>
+            <Head>
+                <title>Código Café - Locales</title>
+                <meta name="description" content="Esta es la página de locales" />
+            </Head>
             <Header />
             <Portada 
                 imagen={'/fondo-locales.png'}

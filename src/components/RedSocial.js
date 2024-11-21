@@ -6,7 +6,7 @@ function RedSocial({imagen, sitio, texto}) {
   return (
     <>
       <div className="ml-6 mr-6 mt-3 mb-3 w-fit">
-        <div class="flex items-center gap-4 hover:scale-105">
+        <div className="flex items-center gap-4 hover:scale-105">
           <Image
             src={imagen}
             width={48}
