@@ -4,7 +4,6 @@ import ShoppingListCards from "./ShoppingListCards"
 import { shoppingInitialState } from "@/reducer/shoppingInitialState"
 import { shoppingReducer } from "@/reducer/shoppingReducer"
 import { TYPES } from "@/actions/actions"
-import Product from "@/components/Product"
 import PortadaDos from "../PortadaDos";
 import { ShoppingContext } from "@/context/shoppingContextProvider";
 import { useContext, useEffect } from "react";

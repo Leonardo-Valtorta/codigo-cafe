@@ -163,15 +163,6 @@
   ],
   "cart": [
     {
-      "id": "2",
-      "image": "/menu/cafe-americano.webp",
-      "name": "Café Americano",
-      "description": "Descripción: Espresso al que se le añade agua caliente.Características: Menos intenso que un espresso, similar al café filtrado.",
-      "category": "cafe",
-      "price": 25,
-      "qty": 2
-    },
-    {
       "id": "1",
       "image": "/menu/cafe-expreso.webp",
       "name": "Café Expresso",
@@ -197,6 +188,15 @@
       "category": "cafe",
       "price": 30,
       "qty": 3
+    },
+    {
+      "id": "18",
+      "image": "/menu/otras-submarino.webp",
+      "name": "Submarino",
+      "description": "Leche cremosa caliente con una tableta de chocolate semiamargo",
+      "category": "otras",
+      "price": 130,
+      "qty": 1
     }
   ]
 }

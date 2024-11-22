@@ -15,7 +15,7 @@ const CartButton= () => {
                     width={24} 
                     height={24} 
                     />
-                    <span className="w-4 h-4 flex items-center justify-center absolute top-0 right-0 bg-red-500 text-white rounded-full text-[10px] transform translate-x-1/2 -translate-y-1/2">{db.cart.length}</span>
+                    <span className="w-4 h-4 flex items-center justify-center absolute top-0 right-0 bg-red-500 text-white rounded-full text-[12px] transform translate-x-1/2 -translate-y-1/2">{db.cart.length}</span>
             </Link>
         </button>
     </>)
