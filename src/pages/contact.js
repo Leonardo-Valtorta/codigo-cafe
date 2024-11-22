@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer";
-import FormContact from "@/components/FormContact";
+import FormContact from "@/components/formContact/FormContact";
 import Header from "@/components/Header";
 import RedSocial from "@/components/RedSocial";
 import Head from "next/head";
