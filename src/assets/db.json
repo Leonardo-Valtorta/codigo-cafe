@@ -161,5 +161,42 @@
       "price": 75
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": "2",
+      "image": "/menu/cafe-americano.webp",
+      "name": "Café Americano",
+      "description": "Descripción: Espresso al que se le añade agua caliente.Características: Menos intenso que un espresso, similar al café filtrado.",
+      "category": "cafe",
+      "price": 25,
+      "qty": 2
+    },
+    {
+      "id": "1",
+      "image": "/menu/cafe-expreso.webp",
+      "name": "Café Expresso",
+      "description": "Descripción: Un café concentrado preparado forzando agua caliente a alta presión a través de café finamente molido. Características: Intensidad y sabor robusto.",
+      "category": "cafe",
+      "price": 30,
+      "qty": 1
+    },
+    {
+      "id": "4",
+      "image": "/menu/cafe-con-leche.webp",
+      "name": "Latte",
+      "description": "Descripción: Mayor cantidad de leche vaporizada con una pequeña cantidad de espresso. Características: Suave y cremoso, ideal para quienes prefieren menos intensidad de café.",
+      "category": "cafe",
+      "price": 50,
+      "qty": 1
+    },
+    {
+      "id": "7",
+      "image": "/menu/cafe-frio.webp",
+      "name": "Café Helado",
+      "description": "Descripción: Café preparado frío, servido con hielo.",
+      "category": "cafe",
+      "price": 30,
+      "qty": 3
+    }
+  ]
 }
