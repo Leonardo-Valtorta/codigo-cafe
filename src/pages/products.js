@@ -3,12 +3,16 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PortadaDos from "@/components/PortadaDos";
 import MenuSection from "@/components/menu/MenuSection";
+import Head from "next/head";
 
 
 export default function Products() {
     return (
     <>
-    
+        <Head>
+            <title>Código Café - Productos</title>
+            <meta name="description" content="Esta es la página de nuestros productos" />
+        </Head>
         <div>
             <Header />
         </div>
