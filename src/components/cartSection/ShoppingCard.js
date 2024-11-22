@@ -3,6 +3,7 @@ import IconButton from "../buttons/IconButton";
 import IconRemove from "../icons/IconRemove";
 import IconMore from "../icons/IconMore"; 
 import IconLess from "../icons/IconLess";
+import Swal from 'sweetalert2';
 
 const ShoppingCard = ({item, deleteOneFromCart, deleteFromCart, addToCart}) => {
   
@@ -14,14 +15,62 @@ const ShoppingCard = ({item, deleteOneFromCart, deleteFromCart, addToCart}) => {
     if (parseInt(item.qty, 10) > 1) { 
       deleteOneFromCart(item.id);
     } else { 
-      const isConfirmed = window.confirm("Quieres eliminar el item del carrito?");
-      if (isConfirmed) { deleteFromCart(id); }
+      Swal.fire({
+        background: "#FCF3CF",
+        icon: "warning",
+        title: "¿Estás seguro?",
+        text: "¿Quieres eliminar el item del carrito?",
+        customClass: {
+          icon: 'custom-icon',
+          container: 'sweet-alert-box',
+        },
+        showCancelButton: true,
+        confirmButtonColor: "#15605B",
+        cancelButtonColor: "#D33",
+        confirmButtonText: "Sí, lo quiero eliminar",
+        cancelButtonText: "Cancelar"
+      }).then((result) => {
+        if (result.isConfirmed) {
+          deleteFromCart(id); 
+          Swal.fire({
+            title: "Eliminado!",
+            text: "Tu item ha sido eliminado de la lista",
+            icon: "success",
+            confirmButtonColor: "#15605B",
+            confirmButtonText: "Aceptar",
+          });
+        }
+      });
     }
   };
 
   const handleDeleteAll = () => {
-    const isConfirmed = window.confirm(  `Quieres eliminar el item del carrito?` );
-    if (isConfirmed) { deleteFromCart(id); }
+    Swal.fire({
+      background: "#FCF3CF",
+      icon: "warning",
+      title: "¿Estás seguro?",
+      text: "¿Quieres eliminar el item del carrito?",
+      customClass: {
+        icon: 'custom-icon',
+        container: 'sweet-alert-box',
+      },
+      showCancelButton: true,
+      confirmButtonColor: "#15605B",
+      cancelButtonColor: "#D33",
+      confirmButtonText: "Sí, lo quiero eliminar",
+      cancelButtonText: "Cancelar"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        deleteFromCart(id); 
+        Swal.fire({
+          title: "Eliminado!",
+          text: "Tu item ha sido eliminado de la lista",
+          icon: "success",
+          confirmButtonColor: "#15605B",
+          confirmButtonText: "Aceptar",
+        });
+      }
+    });
   };
 
 
