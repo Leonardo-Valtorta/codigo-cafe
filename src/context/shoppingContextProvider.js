@@ -48,7 +48,7 @@ const ShoppingContextProvider = (props) => {
     const responseProducts = await axios.get(ENDPOINTS.products), 
       responseCart = await axios.get(ENDPOINTS.cart);
 
-      console.log(responseProducts.data)
+      // console.log(responseProducts.data)
 
     const productsList = await responseProducts.data,
       cartList = await responseCart.data;    
@@ -69,7 +69,7 @@ const ShoppingContextProvider = (props) => {
     };
 
     setDb(data)
-    console.log("Updated DB:", data);
+    // console.log("Updated DB:", data);
   };
 
   const CREATE_ITEM_IN_CART = async (item) => {
