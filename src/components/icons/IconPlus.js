@@ -1,7 +1,7 @@
 const IconPlus = () => {
     return (
         <>
-            <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg"
+            <svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 490 490">
                 <path d="M227.8,174.1v53.7h-53.7c-9.5,0-17.2,7.7-17.2,17.2s7.7,17.2,17.2,17.2h53.7v53.7c0,9.5,7.7,17.2,17.2,17.2
                  s17.1-7.7,17.1-17.2v-53.7h53.7c9.5,0,17.2-7.7,17.2-17.2s-7.7-17.2-17.2-17.2h-53.7v-53.7c0-9.5-7.7-17.2-17.1-17.2
