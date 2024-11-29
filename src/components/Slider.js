@@ -54,10 +54,10 @@ const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
   return (
     <div className="row no-gutters">
       <div
-        className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-3 pb-2 bg-white"
+        className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-3 pb-2 bg-yellow-100 pt-4"
         id="owl-carousel-products"
       >
-        <h3 className="font-medium font-titleCart text-[6vh] md:text-[8vh] text-center md:text-left">Productos destacados</h3>
+        <h2 className="font-navbar text-2xl md:text-3xl mb-6 md:text-center">Productos destacados</h2>
         <ul id="owl-carousel-ul" className="owl-carousel owl-loaded owl-drag">
           <OwlCarousel
             className="owl-theme"
