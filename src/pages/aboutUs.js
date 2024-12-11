@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import NosotrosSection from "@/components/NosotrosSection";
 import Portada from "@/components/Portada";
 
+
 export default function aboutUs() {
     return (
         <>
