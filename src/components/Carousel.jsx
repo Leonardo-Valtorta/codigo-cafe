@@ -24,7 +24,7 @@ const Carousel = () => {
 
   return (
     <div id="default-carousel" className="relative w-full" data-carousel="slide">
-      <div className="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+      <div className="relative h-56 overflow-hidden rounded-b-lg sm:h-64 xl:h-80 2xl:h-96">
         <div className={`duration-700 ease-in-out ${activeIndex === 0 ? '' : 'hidden'}`} data-carousel-item="active">
           <img 
             src="/assets/cafeteria1.jpg" 

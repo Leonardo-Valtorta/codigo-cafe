@@ -27,8 +27,8 @@ module.exports = {
 
         /* Colores Shopping Cart */
         bgShoppingCart:"#D6A367",
-        btnRemoveItem:"#FFB7CD",
-        btnRemoveItemHover:"#F381A3",
+        btnRemoveItem:"#FF5757",
+        btnRemoveItemHover:"#FF2323",
         btnDeleteAll:"#B3261E",
         btnDeleteAllHover:"#830c06",
         Coffee: "#B46C3C",

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
+import CartButton from "./CartButton";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -95,9 +96,7 @@ const Header = () => {
               </Link>
             </li>
             <li className="my-2 sm:my-0 flex items-center hover:underline">
-              <Link className="w-6 h-auto" href="/cart">
-                <img src="carrito-tienda.png" alt="Tienda" />
-              </Link>
+              <CartButton />
               <Link href="/cart" className="text-black pr-3 pl-2 py-2">
                 Tienda
               </Link>

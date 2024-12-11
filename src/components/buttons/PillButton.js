@@ -1,7 +1,7 @@
 const PillButton = ({ children, className, onClick }) => {
     return (
       <button onClick={onClick}
-        className={` text-white font-bold py-2 px-4 my-2 rounded-full inline-flex items-center ${className}`}
+        className={` text-white font-bold py-2 px-4 my-2 rounded-full drop-shadow-lg inline-flex items-center ${className}`}
       >
         {children}
       </button>
